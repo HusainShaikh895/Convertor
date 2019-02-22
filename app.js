@@ -17,11 +17,11 @@ meterInput.addEventListener('input', function(){
 	ccent = ccent/100;
 
 	cinch = cinch * 100;
-	cinch = parseInt(ccent);
+	cinch = parseInt(cinch);
 	cinch = cinch/100;
 
 	ckm = ckm * 100;
-	ckm = parseInt(ccent);
+	ckm = parseInt(ckm);
 	ckm = ckm/100;
 
 	centimeterInput.value = ccent + " cm";
