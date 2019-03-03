@@ -36,10 +36,19 @@ meterInput.addEventListener('input', function(){
 	cfoot = parseInt(cfoot);
 	cfoot = cfoot/100;
 
+	
 	centimeterInput.value = ccent + " cm";
 	inchInput.value = cinch + " inches";
 	kilometerInput.value = ckm + " km";
 	footInput.value = cfoot + " feet";
+
+	if(inchInput.value=="NaN inches")
+	{
+		kilometerInput.value = "";
+		inchInput.value = "";
+		footInput.value = "";
+		centimeterInput.value = "";
+	}
 });
 
 
@@ -74,6 +83,14 @@ centimeterInput.addEventListener('input', function(){
 	inchInput.value = cinch + " inches";
 	kilometerInput.value = ckm + " km";
 	footInput.value = cfoot + " feet";
+
+	if(inchInput.value=="NaN inches")
+	{
+		kilometerInput.value = "";
+		inchInput.value = "";
+		footInput.value = "";
+		meterInput.value = "";
+	}
 });
 
 inchInput.addEventListener('input', function(){
@@ -107,18 +124,25 @@ inchInput.addEventListener('input', function(){
 	meterInput.value = cmeter + " m";
 	kilometerInput.value = ckm + " km";
 	footInput.value = cfoot + " feet";
+
+	if(meterInput.value=="NaN m")
+	{
+		kilometerInput.value = "";
+		meterInput.value = "";
+		footInput.value = "";
+		centimeterInput.value = "";
+	}
 });
 
 kilometerInput.addEventListener('input', function(){
-	if(km=="NaN km")
-	{
-		kilometerInput.value = "";
-	}
+	
 	var km = parseFloat(kilometerInput.value);
 	var cmeter = km * 1000;
 	var ccent = cmeter * 100;
 	var cinch = cmeter * 39.37;
 	var cfoot = cmeter * 3.28;
+
+
 
 	cmeter = cmeter * 100;
 	cmeter = parseInt(cmeter);
@@ -144,6 +168,14 @@ kilometerInput.addEventListener('input', function(){
 	meterInput.value = cmeter + " m";
 	inchInput.value = cinch + " inch";
 	footInput.value = cfoot + " feet";
+
+	if(inchInput.value=="NaN inch" )
+	{
+		meterInput.value = "";
+		inchInput.value = "";
+		footInput.value = "";
+		centimeterInput.value = "";
+	}
 });
 
 
@@ -174,5 +206,13 @@ footInput.addEventListener('input', function(){
 	meterInput.value = cmeter + " m";
 	inchInput.value = cinch + " inch";
 	kilometerInput.value = km + " km";
+
+	if(inchInput.value=="NaN inch")
+	{
+		kilometerInput.value = "";
+		inchInput.value = "";
+		meterInput.value = "";
+		centimeterInput.value = "";
+	}
 
 });
