@@ -1,5 +1,5 @@
 # Convertor
-Distance Convertor - meter, centimeter, kilometer, inch.
+Distance Convertor - meter, centimeter, kilometer, inch and feet. (next update : Miles)
 ![Alt text](SS.jpg)
 *-Screenshot*
 
