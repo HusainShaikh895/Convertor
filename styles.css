@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Coiny');
+@import url('https://fonts.googleapis.com/css?family=Coiny|Orbitron');
 
 * {
 	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+	padding: 0px;
+	
 }
 
 body
@@ -13,7 +13,8 @@ body
 
 div
 {
-	height: 25vh;
+	height: 16vh;
+	outline: none;
 }
 
 input
@@ -21,55 +22,94 @@ input
 	background: black;
 	height: 100%;
 	width: 100%;
-	font-size: 5em;
+	font-size: 3em;
 	text-align: center;
-	color: white;
+	color: #ffffff;
+	font-family: Orbitron;
+	border-radius: 30px;
+	border-color: orange;
+	outline: none;
+	transition: background 0.3s ease-in-out;
 
 }
 
 input:hover
 {
 	background: maroon;
-	transition: background 0.7s ease;
-	outline: none;
+	cursor: pointer;
 }
 
-#meter
+input:focus
 {
-	border-top: 2px solid white;
-	border-bottom: 2px solid white;
+	background: #C14242;
 }
 
-#centimeter
+#title
 {
-	border-top: 2px solid white;
-	border-bottom: 2px solid white;
+	position: relative;
+	right: 0px;
+	top: 50%;
+	height: 100%;
+	width: 100%;
+	font-size: 2em;
+	background-color: aqua;
+	text-align: center;
+	color: black;
+	font-family: Orbitron;
+	cursor: help;
+	transition: all 1s ease-in-out;
 }
 
-#inch
+#title:hover
 {
-	border-top: 2px solid white;
-	border-bottom: 2px solid white;
+	background-color: green;
 }
 
-#kilometer
-{
-	border-top: 2px solid white;
-	border-bottom: 2px solid white;
-}
+
 
 ::-webkit-input-placeholder
 {
-	color: #111111;
-	font-family: Coiny;
+	color: #ddd;
+	font-family: Orbitron;
 }
 
+#reset
+{
+	text-align:center;
+	width: 300px;
+	height: 100px;
+	padding: 5px;
+	border-radius: 50px;
+	font-size: 3em;
+	background-color: orange;
+	outline: none;
+	transform: scale(0.7);
+	box-shadow: 0px 0px 25px 10px white;
+	transition: all 0.3s ease-in-out;
+}
+
+#reset:hover
+{
+	background-color: red;
+	color: white;
+}
+
+#reset:active
+{
+	transform: scale(0.6);
+}
 
 .credit
 {
 	position: absolute;
 	bottom: -5;
-	right: 0;
+	right: 10px;
 	color: white;
 	text-align: center;
+}
+
+a
+{
+	text-decoration: inherit;
+	color: white;
 }
