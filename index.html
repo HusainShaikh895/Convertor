@@ -3,9 +3,13 @@
 <head>
 	<title>Distance Convertor</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<script type="text/javascript" src="app.js"></script>
+	
 </head>
-<body>
+<body><form>
+	<div id="title" onclick="note()">
+		Distance Convertor
+	</div>
+
 	<div id="meter">
 		<input type="text" name="meter" placeholder="Meters...">
 	</div>
@@ -22,10 +26,17 @@
 		<input type="text" name="kilometer" placeholder="kilometer...">
 	</div>
 
+	<div id="foot">
+		<input type="text" name="foot" placeholder="Feet...">
+	</div>
+
+	<button  type="Reset" value="Reset" id="reset">Reset</button>
+
 	<div class="credit">
-			made with ❤️ by Husain Shaikh
+			made with ❤️ by <a href="https://github.com/HusainShaikh895">Husain Shaikh</a>
 			
 		</div>
 	<script type="text/javascript" src="app.js"></script>
+</form>
 </body>
 </html>
